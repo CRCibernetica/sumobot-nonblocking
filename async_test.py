@@ -36,11 +36,11 @@ async def avoid(robot):
     ib.motor_1.throttle = -robot.speed
     ib.motor_2.throttle = -robot.speed
     ib.pixel = (255,0,0)
-    await asyncio.sleep(2.0)
+    await asyncio.sleep(1.0)
     ib.pixel = (0,0,255)
     ib.motor_1.throttle = robot.speed
     ib.motor_2.throttle = -robot.speed
-    await asyncio.sleep(2.0)
+    await asyncio.sleep(0.5)
     
 
 async def handle_sensor(pin, robot):
